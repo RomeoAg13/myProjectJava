@@ -1,0 +1,22 @@
+Voici la requete pour recréer ma table sql : 
+
+
+CREATE TABLE results (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    player1 VARCHAR(255) NOT NULL,
+    score1 INT NOT NULL,
+    player2 VARCHAR(255) NOT NULL,
+    score2 INT NOT NULL
+);
+
+
+L'ajout depuis postman, exemple : 
+
+url : http://localhost:8080/java-project-api/post-game-result
+
+{
+    "player1": "Jane",
+    "score1": 10,
+    "player2": "John",
+    "score2": 8
+}
